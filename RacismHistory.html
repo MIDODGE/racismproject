@@ -1,5 +1,16 @@
 <h1> History of Racism</h1>
 
+<p>Select a color:
+
+<p><label>Background color:</label><br><input id="colorPicker" type="color">
+<p><label>Color value:</label><br><input id="colorValue" readonly>
+
+<script>
+function changeColor() {
+  colorValue.value = colorPicker.value;
+}
+colorPicker.oninput = changeColor;
+</script>
 
 <!doctype html>
 <html>
