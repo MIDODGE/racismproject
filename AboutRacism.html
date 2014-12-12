@@ -7,14 +7,14 @@
 <script type="text/javascript" src="js/lightbox.js"></script>
 <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
 <script type="text/javascript"> 
-17 if(document.images) 
-18 { 
-19   var image_array = new Array(); 
-20 	 
-21   // path to the directory with images 
-22   var path = 'images/'; 
-23   // enumeration of the "active" images 
-24   image_array[0] = path + "image1.gif"; 
+ if(document.images) 
+ { 
+  var image_array = new Array(); 
+	 
+  // path to the directory with images 
+  var path = 'images/'; 
+  // enumeration of the "active" images 
+  image_array[0] = path + "image1.gif"; 
 25   image_array[1] = path + "image2.gif"; 
 26   var preload_image = new Array (); 
 27   
@@ -24,16 +24,7 @@
 31     preload_image[i].src = image_array[i]; 
 32   } 
 33 } 
-34 function rollover(name, filename) 
-35 { 
-36   document.images[name].src = filename; 
-37 } 
-38 </script> 
-39   <br><!--THIS IS THE IMAGE WITH THE ROLLOVER AND LIGHTBOX--> 
-40 <a href="http://t2.gstatic.com/images?q=tbn:ANd9GcRWUbQvcA8p-07cSrf8MaozxUT8Y-6fSyrPrt-5ekS-sDudmhFp" rel="lightbox" onmouseover="rollover('button1','http://t2.gstatic.com/images?q=tbn:ANd9GcRWUbQvcA8p-07cSrf8MaozxUT8Y-6fSyrPrt-5ekS-sDudmhFp')"  
-41             onmouseout="rollover('button1','http://t1.gstatic.com/images?q=tbn:ANd9GcRY4wfEdcmlCdE6aIvCw4rlebudbdJDtAGnOHnV8oR-9GIHD658_w')">  
-42 <img name="button1" src="http://t1.gstatic.com/images?q=tbn:ANd9GcRY4wfEdcmlCdE6aIvCw4rlebudbdJDtAGnOHnV8oR-9GIHD658_w"></a> 
-43 
+34
  <style> 
 header, footer {
   background: White;
