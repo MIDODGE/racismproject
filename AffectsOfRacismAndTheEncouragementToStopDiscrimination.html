@@ -1,1 +1,37 @@
-Affects of Racism
+<!doctype html>  
+ <meta name="viewport" content="width=device-width">  
+ <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'> 
+ <link href="tanstyle.css" rel="stylesheet" type="text/css"> 
+ <script type="text/javascript" src="js/prototype.js"></script> 
+ <script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script> 
+ <script type="text/javascript" src="js/lightbox.js"></script> 
+ <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" /> 
+ <script type="text/javascript">  
+ if(document.images)  
+ {  
+   var image_array = new Array();  
+ 	  
+   // path to the directory with images  
+   var path = 'images/';  
+   // enumeration of the "active" images  
+   image_array[0] = path + "image1.gif";  
+   image_array[1] = path + "image2.gif";  
+  var preload_image = new Array ();  
+   
+  for(var i=0; i<image_array.length; i++)  
+  {  
+    preload_image[i]= new Image();  
+    preload_image[i].src = image_array[i];  
+   }  
+ }  
+ function rollover(name, filename)  
+ {  
+   document.images[name].src = filename;  
+ }  
+ </script>  
+  <br><!--THIS IS THE IMAGE WITH THE ROLLOVER AND LIGHTBOX-->  
+ <a href="http://t2.gstatic.com/images?q=tbn:ANd9GcRWUbQvcA8p-07cSrf8MaozxUT8Y-6fSyrPrt-5ekS-sDudmhFp" rel="lightbox" onmouseover="rollover('button1','http://t2.gstatic.com/images?q=tbn:ANd9GcRWUbQvcA8p-07cSrf8MaozxUT8Y-6fSyrPrt-5ekS-sDudmhFp')"   
+            onmouseout="rollover('button1','http://t1.gstatic.com/images?q=tbn:ANd9GcRY4wfEdcmlCdE6aIvCw4rlebudbdJDtAGnOHnV8oR-9GIHD658_w')">   
+ <img name="button1" src="http://t1.gstatic.com/images?q=tbn:ANd9GcRY4wfEdcmlCdE6aIvCw4rlebudbdJDtAGnOHnV8oR-9GIHD658_w"></a>  
+  
+
