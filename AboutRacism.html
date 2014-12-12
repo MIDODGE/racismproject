@@ -6,7 +6,35 @@
 <script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script>
 <script type="text/javascript" src="js/lightbox.js"></script>
 <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
-<style> 
+<script type="text/javascript"> 
+17 if(document.images) 
+18 { 
+19   var image_array = new Array(); 
+20 	 
+21   // path to the directory with images 
+22   var path = 'images/'; 
+23   // enumeration of the "active" images 
+24   image_array[0] = path + "image1.gif"; 
+25   image_array[1] = path + "image2.gif"; 
+26   var preload_image = new Array (); 
+27   
+28   for(var i=0; i<image_array.length; i++) 
+29   { 
+30     preload_image[i]= new Image(); 
+31     preload_image[i].src = image_array[i]; 
+32   } 
+33 } 
+34 function rollover(name, filename) 
+35 { 
+36   document.images[name].src = filename; 
+37 } 
+38 </script> 
+39   <br><!--THIS IS THE IMAGE WITH THE ROLLOVER AND LIGHTBOX--> 
+40 <a href="http://t2.gstatic.com/images?q=tbn:ANd9GcRWUbQvcA8p-07cSrf8MaozxUT8Y-6fSyrPrt-5ekS-sDudmhFp" rel="lightbox" onmouseover="rollover('button1','http://t2.gstatic.com/images?q=tbn:ANd9GcRWUbQvcA8p-07cSrf8MaozxUT8Y-6fSyrPrt-5ekS-sDudmhFp')"  
+41             onmouseout="rollover('button1','http://t1.gstatic.com/images?q=tbn:ANd9GcRY4wfEdcmlCdE6aIvCw4rlebudbdJDtAGnOHnV8oR-9GIHD658_w')">  
+42 <img name="button1" src="http://t1.gstatic.com/images?q=tbn:ANd9GcRY4wfEdcmlCdE6aIvCw4rlebudbdJDtAGnOHnV8oR-9GIHD658_w"></a> 
+43 
+ <style> 
 header, footer {
   background: White;
   border: 10px ; Black;
@@ -62,6 +90,7 @@ ul {
 <h1> About Racism </h1>
 <h3>What is Racism? How does it exist in our world today? What can we do about this? </h3> 
 </header>
+
 <section> 
   <p> 
   Racism is the belief that characteristics and abilities can be a representation 
@@ -69,10 +98,13 @@ ul {
   Racism and discrimination have been used as powerful weapons to encourage fear or the hatred of others
   which causes conflict and war during economic downturns.
   </p>
-<img src="http://t3.gstatic.com/images?q=tbn:ANd9GcTOFt0J4hNrHGVA6NBwBGDd72UtpWtD9GhZ3mOOoicX4uHWfOkw4A">
-  
-  
-  
-  
-  
+<img src="http://t3.gstatic.com/images?q=tbn:ANd9GcTOFt0J4hNrHGVA6NBwBGDd72UtpWtD9GhZ3mOOoicX4uHWfOkw4A"> 
+  <br> 
+  <p>
+  Examples of racist behavior include ridicule, racist abuse,
+  harassment, propaganda, vilification, public damage and physical assault.
+  These are the type of things that lead to chaos and violence against our nation. 
+<img src="http://graphics8.nytimes.com/images/2005/12/12/international/12aust2.l.jpg"> 
+ </p>
+ 
 </section>
